@@ -18,14 +18,16 @@ html,
 }
 
 /* general */
-a {color: inherit;}
+a {
+    color: inherit;
+}
 
 li {
     list-style-type: none;
 }
 
 body {
-    max-width: 1400px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -91,3 +93,55 @@ header nav img {
     width: auto;
 }
 
+/* General section styling */
+
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex-direction: row-reverse;
+    gap: 40px;
+}
+
+header {
+    position: relative;
+}
+
+section {
+    position: relative;
+}
+
+section div {
+    flex: 1;
+}
+
+section>img {
+    width: 50%;
+    height: auto;
+}
+
+
+/* section  background colors */
+section.DarkBlueBg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background: var(--dark-blue-color);
+    z-index: -2;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background: var(--dark-blue-color);
+    z-index: -2;
+}
