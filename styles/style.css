@@ -27,7 +27,7 @@ li {
 }
 
 body {
-    max-width: 1320px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -95,12 +95,8 @@ header nav img {
 
 /* General section styling */
 
-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 20px;
-    flex-direction: row-reverse;
-    gap: 40px;
+body {
+    color: var(--dark-blue-color);
 }
 
 header {
@@ -108,7 +104,15 @@ header {
 }
 
 section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex-direction: row-reverse;
+    gap: 40px;
     position: relative;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
 }
 
 section div {
@@ -145,3 +149,38 @@ header::before {
     background: var(--dark-blue-color);
     z-index: -2;
 }
+
+/* .DarkBlueBg section */
+
+.DarkBlueBg {
+    color: var(--grey-1-color);
+}
+
+/* blog section */
+
+section.blog {
+    flex-wrap: wrap;
+    flex: 1;
+    
+}
+
+section.blog a{
+text-decoration: none;
+}
+
+section.blog article{
+flex: 1;
+gap: 40px;
+}
+
+section.blog article img {
+    width: 100%;
+    height: auto;
+}
+
+section.blog h2 {
+    min-width: 100%;
+    text-align: center;
+    
+}
+
