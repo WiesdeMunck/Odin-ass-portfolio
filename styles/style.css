@@ -255,3 +255,23 @@ section.cta > div {
     display: flex;
     align-items:  center;
 }
+
+/* footer */
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background: var(--dark-blue-color);
+    z-index: -2;
+}
+
+footer {
+    padding: 40px 0;
+    text-align: center;
+    color: var(--grey-1-color);
+    position: relative;
+}
