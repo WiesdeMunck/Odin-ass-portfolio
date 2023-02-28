@@ -204,5 +204,30 @@ section.blog article a img {
 section.blog h2 {
     min-width: 100%;
     text-align: center;
-    
+}
+
+/* Qoute section */
+
+section.bigQuote::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background: var(--grey-2-color);
+    z-index: -2;
+}
+
+section.bigQuote blockquote p {
+font-size: 36px;
+font-weight: 200;
+font-style: italic;
+}
+
+section.bigQuote figcaption {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: right;
 }
