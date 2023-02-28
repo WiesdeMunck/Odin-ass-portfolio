@@ -102,10 +102,10 @@ header nav img {
 
 .primaryButton {
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 12px 36px;
     font-weight: 600;
     background-color: var(--blue-1-color);
-    border-radius: 3px;
+    border-radius: 8px;
     display: inline-block;
     margin-top: 20px;
 }
@@ -206,4 +206,3 @@ section.blog h2 {
     text-align: center;
     
 }
-
